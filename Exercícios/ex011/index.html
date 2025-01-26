@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essa página em diversos aparelhos, ou altere o tamanho do seu navegador, utilizando o PC.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/pequena.png" type="image/png"> <!-- O type vai conter o media type do arquivos e depois da barra, terá o formato do arquivo, nesse caso, o PNG -->
+        <source media="(max-width: 1050px)" srcset="img/media.png" type="image/png">
+        <img src="./img/grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="./media/2016 Dodge Challenger SRT Hellcat - SOUND!.mp3" controls></audio> <!-- AUTOPLAY faz com que o áudio inicie automaticamente -->
+    <!-- Formatos de áudio: MP3, WAV, OGG(Open Source) -->
+
+    <audio preload="metadata" controls loop>
+        <source src="./media/happy-mistake.mp3" type="audio/mpeg">
+        <source src="./media/happy-mistake.ogg" type="audio/ogg">
+        <source src="./media/happy-mistake.wav" type="audio/wav"> <!-- Tentar não utilizar o WAV, pois é muito pesado-->
+        <p>Infelizmente seu navegador não é compatível com o formato de áudio. <a href="./media/happy-mistake.mp3">Clique aqui para baixar o áudio</a></p>
+    </audio>
+    <!--
+        Acima foi feito o seguinte... 
+        O navegador vai tentar carrregar o arquivo MP3, se não conseguir, tentará o OGG, e por fim o WAV.
+        Caso não consiga carregar nenhum dos formatos, será exibido o texto dentro da tag <p>
+    -->
+
+</body>
+</html>

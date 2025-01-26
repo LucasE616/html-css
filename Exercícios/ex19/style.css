@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+Para selecionar um ID em CSS, utilizamos o caractere # seguido do nome do ID.
+Para selecionar uma classe em CSS, utilizamos o caractere . seguido do nome da classe.
+*/
+
+body {
+    background-color: #F2E3D5;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+h1 {
+    color: #024959;
+}
+
+#principal {
+    text-align: center;
+    background-color: #3CA6A6;
+    color: #012E40;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #026773;
+}
+
+.basico {
+    color: #007e8b;
+}
+
+.intermediario {
+    color: #ffbb00;
+}
+
+.avancado {
+    color: #ac0000;
+}
+
+.destaque {
+    color: #3CA6A6;
+}

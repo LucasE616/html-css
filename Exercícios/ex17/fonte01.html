@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body {
+            background-color: #363636;
+            color: #ededed;
+            font-family: 'Work Sans', Helvetica, sans-serif;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc
+            Medidas relativas: %, em, rem, ex, vw, vh, vmin, vmax
+
+            Medidas recomendadas pela W3C: em, px
+            16px = 1em
+
+            obs: Eu(Lucas E.) configurava o root e utilizava o rem para definir o tamanho da fonte
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /* 
+            Pesos literais/palavra chave: lighter, normal, bold, bolder
+            Pesos numéricos: 100, 200, 300, 400, 500, 600, 700, 800, 900
+            */
+        }
+        
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-decoration: underline;
+            /*
+            Shorthand: 
+            font: font-style -> font-weight -> font-size -> font-family
+            Exemplo:
+            font: italic bold 1.5em 'Times New Roman', serif;
+            */
+        }
+    </style>
+</head>
+
+<!-- 
+Sites com exemplos de fontes:
+    https://www.w3schools.com/csSref/css_websafe_fonts.php
+    https://fonts.google.com/
+-->
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate ab, aperiam minus fuga voluptatem recusandae natus porro reiciendis, possimus ut, explicabo doloribus delectus consequuntur impedit vero vitae hic labore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate ab, aperiam minus fuga voluptatem recusandae natus porro reiciendis, possimus ut, explicabo doloribus delectus consequuntur impedit vero vitae hic labore!</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate ab, aperiam minus fuga voluptatem recusandae natus porro reiciendis, possimus ut, explicabo doloribus delectus consequuntur impedit vero vitae hic labore!</p>
+</body>
+</html>

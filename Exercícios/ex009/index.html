@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="3"> <!-- Tipos: 1, A, a, I, i  | START é a partir de onde a lista se inicia -->
+        <!-- a tag LI, não precisa do </LI> para fechar a tag, é opcional -->
+        <li>Acordar</li>
+        <li>Ligar para fulano</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!-- Tipos: disc, circle, square -->
+        <li>Pão</li>
+        <li>Carne</li>
+        <li>Queijo</li>
+        <li>Sabonete</li>
+        <li>Tempero</li>
+        <li>Shampoo</li>
+        <li>Frutas</li>
+        <li>Sabão</li>
+        <li>Água</li>
+        <li>Mel</li>
+    </ul>
+
+    <h2>Juntando listas 1.0</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Assembly</li>
+            <li>Fortran</li>
+            <li>Lang C</li>
+        </ol>
+
+        <li>Novas</li>
+        <ol type="a" start="4">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Node.js</li>
+        </ol>
+    </ol>
+
+    <h3>Meus games favoritos</h3>
+    <ol>
+        <li>PC</li>
+        <ul type="disc">
+            <li>Need For Speed</li>
+            <li>PES</li>
+                <ul>
+                    <li>PES 2017</li>
+                    <li>PES 2013</li>
+                </ul>
+            <li>GTA Vice City</li>
+            <li>Counter Strike</li>
+        </ul>
+
+        <li>PlayStation 2</li>
+        <ul type="circle">
+            <li>GTA San Andreas</li>
+            <li>MTX Mototrax</li>
+            <li>God of War</li>
+            <li>Bomba Path</li>
+        </ul>
+
+        <li>Celular</li>
+        <ul type="square">
+            <li>FIFA</li>
+            <li>Call Off Duty</li>
+            <li>PES Club Manager</li>
+            <li>8 Ball Pool</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Definição</dd>
+
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de design de um site</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>
