@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            height: 95vh;
+            position: relative; /* Esse posicionamento já vem por padrão */
+            height: 500px;
+            padding: 8px;
+            background-color: #363636;
+            background-image: url('./img/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute; /* Esse posicionamento dá acesso às tags left e top */
+            left: 50%; /* Ajuste o valor para alinhar o conteúdo horizontalmente */
+            top: 50%; /* Ajuste o valor para alinhar o conteúdo verticalmente */
+            transform: translate(-50%, -50%); /* Esse comando é responsável por centralizar o conteúdo, alterando as caracteristicas da imagem, nesse caso */
+
+            background-image: url('./img/target001.png');
+            background-size: 100% 100%;
+
+            height: 250px;
+            width: 400px;
+            background-color: #ffbb00;
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
