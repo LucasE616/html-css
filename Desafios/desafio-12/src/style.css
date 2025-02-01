@@ -1,5 +1,66 @@
 @charset "UTF-8";
 
-body {
-    background-color: #e3e3e3;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #adadad;
+}
+
+header {
+    background-color: #363636;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 64px;
+    font-variant: small-caps; /* small-caps funciona deixando as letras maiúsculas, mas as primeiras letras maiores */
+}
+
+header p {
+    padding-bottom: 64px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #adadad;
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 32px;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: #ffbb00;
+    color: white;
+}
+
+.imagem > p {
+    background-color: #363636;
+    width: 400px;
+}
+
+footer {
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    padding: 16px;
 }
