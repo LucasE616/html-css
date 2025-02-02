@@ -21,8 +21,27 @@
             padding: 8px;
         }
 
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: #454545;
+            color: #fbfbfb;
+            border-radius: 8px 8px 0 0;
+        }
+
+        a {
+            color: #fbfbfb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cccccc;
+            text-decoration: underline;
+        }
+
         thead, tfoot {
-            background-color: #363636;
+            background-color: #5d5d5d;
             color: #fbfbfb;
         }
 
@@ -37,10 +56,10 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Tabela usada para exemplo | Unidades federativas do Brasil</a>
     <!--
     Anatomia de tabelas grandes
         table
+            caption
             thead
                 tr - td - th
             tbody
@@ -50,11 +69,12 @@
     -->
 
     <table>
+        <caption><a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">População das Unidades Federativas do Brasil 🔗</a></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
             </tr>
         </thead>
 
@@ -225,7 +245,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>212 583 720</strong></td>
                 <td class="porcentagem"><strong>100%</strong></td>
             </tr>
