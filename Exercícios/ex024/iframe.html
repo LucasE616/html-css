@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe { /* o CSS prevalece sobre os estilos dos iframes */
+            width: 700px;
+            height: 350px;
+            border: 3px dashed #f00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+
+    <!-- Tamanho padrão do iframe é de 300px x 150px -->
+    <p>
+        Acessando o site do 
+
+        <iframe src="https://www.waldir.dev/" frameborder="0" height="500" scolling="no">
+            Seu navegaador não suporta iframes. <a href="https://www.waldir.dev/" target="_blank">Acesse o site por aqui</a>
+        </iframe>
+
+        para testar iframe.
+    </p>
+
+    <p>
+        Acessando o site do 
+        
+        <iframe src="https://www.gabrieltaveira.dev/pt-BR" frameborder="0" height="500" width="500">
+            Seu navegaador não suporta iframes. <a href="https://www.gabrieltaveira.dev/pt-BR" target="_blank">Acesse o site por aqui</a>
+        </iframe>
+        
+        para testar iframe.
+    </p>
+
+</body>
+</html>
