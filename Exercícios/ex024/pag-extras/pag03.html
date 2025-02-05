@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+    /*
+    Seletores de atributos:
+    #   -> id
+    .   -> class
+    :   -> pseudo-classe
+    ::  -> pseudo-elemento
+    >   -> children (filho direto)
+
+    */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ededed;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a::after {
+            content: "  [Link Externo]";
+            font-size: 0.8em;
+            color: #333;
+        }
+
+        .especial::before {
+            content: "🔥 ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/LucasE616" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@acfperformance" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://korncars.com/" target="_blank">Site Korn Cars</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #ededed;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightslategray;
+            padding: 3px;
+
+            box-shadow: 4px 3px 8px 2px #00000065;
+            /*
+            box-shadow funciona da seguinte forma:
+            box-shadow: 4px(positivo para direita, negativo para esquerda) 3px(positivo para baixo, negativo para cima) 8px(para espalhamento) 2px(positivo para espessura, negativo para espessura) black(cor da sombra);
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #ededed;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #ededed;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 8px;
+            /*
+            border-radius funciona da seguinte forma:
+            border-radius: 8px(raio do canto);
+            Caso tenha quatro valores, o primeiro é o canto superior esquerdo, o segundo é o canto superior direito, o terceiro é o canto inferior direito e o quarto é o canto inferior esquerdo, seguindo o sentido horário.
+            */
+
+            box-shadow: 4px 4px 8px 2px #00000065;
+        }
+
+        article {
+            background-color: lightslategray;
+            box-shadow: 2px 2px 6px 1px #00000071;
+        }
+
+        article > aside {
+            background-color: #657585;
+        }
+
+        footer {
+            background-color: #363636;
+            color: lightgray;
+            text-align: center;
+            padding: 8px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 32px auto;
+            background-color: royalblue;
+
+            box-shadow: 4px 4px 4px 4px #00000065;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes | Política | Tecnologia | Automobilismo</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Cruzeiro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium neque voluptatibus. Similique provident magni deleniti omnis labore ad voluptatibus, quae tempora, dolores esse ipsam minima sunt dolor iusto? Nesciunt.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Martins</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium neque voluptatibus. Similique provident magni deleniti omnis labore ad voluptatibus, quae tempora, dolores esse ipsam minima sunt dolor iusto? Nesciunt.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Santos</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Notícias sobre a Apple</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium neque voluptatibus. Similique provident magni deleniti omnis labore ad voluptatibus, quae tempora, dolores esse ipsam minima sunt dolor iusto? Nesciunt.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Martins</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Notícias sobre a Toytota</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium neque voluptatibus. Similique provident magni deleniti om nis labore ad voluptatibus, quae tempora, dolores esse ipsam minima sunt dolor iusto? Nesciunt.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Santos</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Lucas Emanuel</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
