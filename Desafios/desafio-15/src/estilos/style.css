@@ -41,3 +41,21 @@ main {
     width: 267px;
     height: 472px;
 }
+
+#redes-sociais {
+    text-align: right;
+}
+
+#redes-sociais > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+#redes-sociais > a > img:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    transform: translate(-2px, -2px);
+}
