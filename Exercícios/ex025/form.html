@@ -13,7 +13,7 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- Para dados com mais de 3 mil bytes, não é possível utilizar o método GET, para dados sensíveis e arquivos, também é indicado o método POST -->
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
