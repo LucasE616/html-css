@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+Tipical Device Breakpoints
+--------------------------
+
+Pequenas telas = até 600px
+Celular        = de 600px até 768px
+Tablet         = de 768px até 992px
+Desktop        = de 992px até 1200px
+Grandes telas  = acima de 1200px
+*/
+
+
+/* Impressora */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url('../img/back-print.jpg'); /* Não precisa alterar o background, pois na impressão, não carrega o background */
+    }
+
+    main {
+        width: 85vw;
+        border: 2px solid #363636;
+    }
+    
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita a partir do site github.com/LucasE616';
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+/*
+Não precisa de configuração para tela pequena, pois foi pré configurado no estilo principal
+@media screen and (max-width: 600px) {}
+@media screen and (min-width: 600px) and (max-width: 768px) {}
+*/
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../img/back-tablet.jpg');
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url('../img/back-pc.jpg');
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+
+/* Telas grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../img/back-tv.jpg');
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
