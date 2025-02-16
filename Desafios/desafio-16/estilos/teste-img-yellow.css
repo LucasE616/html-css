@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+Padrão de cores:
+Imagem locked:
+Amarelo: #f5c314 ou #ffbb00
+Roxo: #38226c
+Cinza: #dde0da ou #ededed ou #e3e3e3
+
+Imagem VPN:
+Cinza: #ced8d9 ou #ededed ou #e3e3e3
+Verde: #106675
+Marrom: #5f5656
+*/
+
+* {
+    font-family: system-ui, Ubuntu, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #f5c314;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #ededed;
+    width: 240px;
+    height: 560px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login > #imagem {
+    display: block;
+    background: #106675 url('../img/locked.jpg') no-repeat;
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#login > #formulario {
+    display: block;
+    padding: 10px;
+}
