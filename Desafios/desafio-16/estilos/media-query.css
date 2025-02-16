@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+/* Configurações Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #106675, #5f5656);
@@ -7,6 +9,7 @@
 
     #login {
         width: 90vw;
+        height: 400px;
     }
 
     #login > #imagem {
@@ -22,6 +25,8 @@
     }
 }
 
+
+/* Configurações Telas Grandes */
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #106675, #ced8d9);
@@ -29,6 +34,7 @@
 
     #login {
         width: 990px;
+        height: 560px;
     }
 
     #login > #imagem {
