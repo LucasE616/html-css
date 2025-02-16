@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/web-lock.png" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -20,8 +21,20 @@
                     Seja bem-vindo(a)! Faça login para seu ambiente.
                 </p>
 
-                <form action="login.php">
+                <form action="login.php" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">account_circle</i>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" maxlength="32" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">fingerprint</i>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" minlength="8" maxlength="24" required>
+                        <label for="isenha">Senha</label>
+                    </div>
 
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" target="_blank">Esqueci a senha <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>
