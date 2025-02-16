@@ -10,14 +10,14 @@
     }
 
     #login > #imagem {
-        float: left;
+        float: right;
         width: 35%;
         height: 100%;
         background-position: center center;
     }
 
     #login > #fomulario {
-        float: right;
+        float: left;
         width: 65%;
     }
 }
@@ -41,5 +41,13 @@
     #login > #fomulario {
         float: right;
         width: 60%;
+    }
+
+    #formulario > h1 {
+        font-size: 2.3em;
+    }
+
+    #formulario > p {
+        font-size: 1.2em;
     }
 }
