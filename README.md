@@ -7,3 +7,5 @@ Iniciando o gerenciamento desse repostório pelo GitHub Desktop.
 <a href="https://lucase616.github.io/html-css/Desafios/desafio-10/android.html" target="_blank">Desafio-10 | HTML5 & CSS3</a>
 
 <a href="https://lucase616.github.io/html-css/Desafios/desafio-12/index.html" target="_blank">Desafio-12 | HTML5 & CSS3</a>
+
+<a href="https://lucase616.github.io/html-css/Desafios/desafio-16/index.html" target="_blank">Desafio-16 | HTML5 & CSS3</a>
