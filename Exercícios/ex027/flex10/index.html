@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: #363636;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+            
+            background-color: lightslategray;
+        }
+
+        .item {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 240px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+
+        .container2 {
+            display: flex;
+            flex-flow: row nowrap;
+            
+            background-color: lightslategray;
+        }
+
+        .item1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 240px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .item2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 240px;
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        .item3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 240px;
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <div class="container2">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+    </div>
+</body>
+</html>
