@@ -27,12 +27,13 @@ header {
 }
 
 header > h1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 0 0 200px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 header > nav {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     display: flex;
     flex-flow: row wrap;
@@ -48,6 +49,7 @@ header > nav > a {
     text-decoration: none;
     text-align: center;
     transition: .5s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 header > nav > a:hover {
@@ -57,7 +59,8 @@ header > nav > a:hover {
 main {
     background-color: white;
     padding: 8px;
-    margin: 12px;
+    margin: 12px auto;
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    max-width: 80vw;
 }
