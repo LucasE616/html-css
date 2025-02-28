@@ -18,14 +18,40 @@ header {
     background-color: gray;
     color: white;
     padding: 12px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     border: 1px solid black;
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px solid black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: #363636;
+    color: white;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+header > nav > a:hover {
+    background-color: #666;
 }
 
 main {
